@@ -4,7 +4,7 @@ category: networking
 name: Beszel
 version: "0.1.2"
 tagline: A lightweight server monitoring hub with historical data, docker stats, and alerts.
-description: >
+description: >-
   A lightweight server monitoring hub with historical data, docker stats, and alerts.
   
   Features:
@@ -24,13 +24,18 @@ description: >
   - Automatic backups: Save and restore your data to / from disk or S3-compatible storage.
   
   - REST API: Use your metrics in your own scripts and applications.
-developer:
-website:
-repo:
+releaseNotes: >-
+developer: henrygd
+website: https://github.com/henrygd/beszel
+repo: https://github.com/henrygd/beszel
+upport: https://github.com/henrygd/beszel/discussions
 port: 8090
 gallery:
+  - 1.jpg
+  - 2.jpg
+  - 3.jpg
 path: ""
 defaultUsername: ""
 defaultPassword: ""
-submitter: owms
-submission: https://github.com/getumbrel/umbrel/pull/334
+submitter: owmsoton
+submission: 
