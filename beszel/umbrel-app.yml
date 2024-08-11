@@ -1,5 +1,5 @@
 manifestVersion: 1
-id: btc-rpc-explorer
+id: beszel
 category: networking
 name: Beszel
 version: "0.1.2"
