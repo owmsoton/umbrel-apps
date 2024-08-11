@@ -1,0 +1,24 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      # <app-id>_<web-container-name>_1
+      # e.g. 'btc-rpc-explorer_web_1'
+      # Note that the '_1' at the end is needed
+      APP_HOST: beszel_server_1
+      APP_PORT: 8090
+      PROXY_AUTH_ADD: "false"
+
+  server:
+    image: henrygd/beszel:0.1.2@sha256:63d070ae0bf4ce6bdd8ab11b0b1e3b5ca56f7e0a8f2be47f3e55a36f08c6bfa2
+    #container_name: 'beszel'
+    restart: on-failure
+    environment:
+      - PUID=1000
+      - PGID=1000
+    #ports:
+    #  - '8090:8090'
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+    #  - ./beszel_data:/beszel_data
